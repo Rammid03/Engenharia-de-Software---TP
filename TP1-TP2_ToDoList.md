@@ -1,22 +1,22 @@
 
-# 🧩 TP1 e TP2 – Sistema de Controle de Tarefas Pessoais (To-Do List)
+# Sistema de Controle de Tarefas Pessoais (To-Do List)
 
 ## TP1 – Definição do Problema e Planejamento Inicial
 
-### 🎯 Objetivo
+### Objetivo
 Desenvolver uma aplicação web simples para **gerenciamento de tarefas pessoais**, permitindo que o usuário cadastre, visualize, edite e conclua tarefas de forma prática.  
 O sistema busca ajudar pessoas a **organizar suas atividades diárias** de maneira intuitiva e acessível.
 
 ---
 
-### 🧠 Problema
+### Problema
 Muitas pessoas têm dificuldade em organizar suas tarefas do dia a dia e acabam esquecendo compromissos ou perdendo prazos.  
 Embora existam várias ferramentas, muitas são complexas ou exigem login.  
 Assim, há necessidade de uma **solução simples, leve e sem dependências externas**, que funcione diretamente no navegador.
 
 ---
 
-### 💻 Tipo de Solução
+### Tipo de Solução
 Será desenvolvida uma **aplicação web (To-Do List)** com foco em simplicidade e praticidade.  
 O usuário poderá:
 - Adicionar novas tarefas;
@@ -28,7 +28,7 @@ Os dados serão salvos **localmente no navegador (LocalStorage)**, dispensando b
 
 ---
 
-### ✅ Requisitos Funcionais
+### Requisitos Funcionais
 | ID | Requisito | Descrição |
 |----|------------|------------|
 | RF01 | Adicionar tarefa | O usuário pode criar uma nova tarefa informando um título. |
@@ -40,7 +40,7 @@ Os dados serão salvos **localmente no navegador (LocalStorage)**, dispensando b
 
 ---
 
-### ⚙️ Requisitos Não Funcionais
+### Requisitos Não Funcionais
 | ID | Requisito | Descrição |
 |----|------------|------------|
 | RNF01 | Usabilidade | A interface deve ser simples, limpa e intuitiva. |
@@ -69,50 +69,11 @@ Usuário -> Editar tarefa
 Usuário -> Excluir tarefa
 Usuário -> Visualizar contagem
 ```
-
 ---
 
-### 🧱 Estrutura Sugerida do Repositório
-```
-📁 to-do-list
-├── 📂 docs
-│   ├── TP1.md
-│   ├── TP2.md
-│   ├── requisitos.md
-│   └── testes.md
-├── 📂 src
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-├── 📂 videos
-├── README.md
-└── LICENSE
-```
+## TP2 – Projeto de Software
 
----
-
-### 🗂️ GitHub Projects (Planejamento)
-**Colunas sugeridas:**
-
-- **Project Backlog**
-  - RF01: Criar nova tarefa  
-  - RF02: Marcar tarefa como concluída  
-  - RF03: Editar tarefa  
-  - RF04: Excluir tarefa  
-  - RF05: Salvar tarefas no navegador  
-  - RF06: Exibir contagem de tarefas  
-
-- **TODO (Sprint TP2)**
-  - Escolher tecnologias e arquitetura  
-  - Criar protótipo simples da interface  
-  - Configurar estrutura inicial do projeto  
-  - Documentar arquitetura (TP2)
-
----
-
-## 🏗️ TP2 – Projeto de Software
-
-### 🧩 Escolhas de Tecnologias
+### Escolhas de Tecnologias
 | Camada | Tecnologia | Justificativa |
 |---------|-------------|----------------|
 | Frontend | **HTML5, CSS3 e JavaScript Puro** | Permite construir uma aplicação simples e funcional sem necessidade de frameworks. |
@@ -121,9 +82,9 @@ Usuário -> Visualizar contagem
 
 ---
 
-### 🧠 Arquitetura da Solução (C4 Model Simplificado)
+### Arquitetura da Solução (C4 Model Simplificado)
 
-#### 🔹 Nível 1 – Contexto
+### Nível 1 – Contexto
 O sistema “To-Do List” permite que o **usuário organize suas tarefas diárias** em uma interface web leve e prática.  
 Os dados são armazenados localmente e não há necessidade de login.
 
@@ -133,7 +94,7 @@ Os dados são armazenados localmente e não há necessidade de login.
 
 ---
 
-#### 🔹 Nível 2 – Containers
+#### Nível 2 – Containers
 | Container | Tecnologia | Função |
 |------------|-------------|--------|
 | **Interface Web (Frontend)** | HTML + CSS + JS | Responsável por toda a lógica e interface. |
@@ -147,7 +108,7 @@ Fluxo:
 
 ---
 
-#### 🔹 Nível 3 – Componentes
+#### Nível 3 – Componentes
 **Principais componentes (JS):**
 - `taskManager.js`: gerencia a lista de tarefas (adicionar, remover, editar).  
 - `storageHandler.js`: lê e grava dados no LocalStorage.  
@@ -161,13 +122,13 @@ Fluxo:
 
 ---
 
-### 💬 Justificativa do Modelo
+### Justificativa do Modelo
 A arquitetura foi pensada para **máxima simplicidade e clareza**, permitindo que o código seja facilmente entendido e evoluído.  
 O uso de **HTML, CSS e JS puro** elimina dependências externas e facilita o aprendizado dos conceitos básicos de front-end e persistência local.  
 
 ---
 
-### 📅 Planejamento da Próxima Sprint (TP3)
+### Planejamento da Próxima Sprint (TP3)
 **Objetivo do TP3:** Criar o primeiro protótipo funcional da aplicação.
 
 **Atividades planejadas:**
