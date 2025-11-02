@@ -1,4 +1,4 @@
-# 🧪 Plano de Testes – To-Do List
+Plano de Testes – To-Do List
 
 ## Objetivo
 Este documento descreve os casos de teste da aplicação **To-Do List**, desenvolvida como parte do TP4.  
@@ -6,7 +6,7 @@ O objetivo é validar o correto funcionamento das principais funcionalidades da 
 
 ---
 
-## Ambiente de Teste
+Ambiente de Teste
 - **Navegador:** Google Chrome (versão mais recente)  
 - **Sistema Operacional:** Windows 10 / 11  
 - **Tecnologias da aplicação:** HTML, CSS, JavaScript (LocalStorage)  
@@ -14,7 +14,7 @@ O objetivo é validar o correto funcionamento das principais funcionalidades da 
 
 ---
 
-## Casos de Uso
+Casos de Uso
 Os testes foram criados com base nos seguintes casos de uso:
 
 | Código | Caso de Uso | Descrição |
@@ -26,9 +26,9 @@ Os testes foram criados com base nos seguintes casos de uso:
 
 ---
 
-## Casos de Teste
+Casos de Teste
 
-### **CU01 – Adicionar tarefa**
+CU01 – Adicionar tarefa
 | ID | Caso de Teste | Passos | Resultado Esperado |
 |----|----------------|--------|--------------------|
 | CT01 | Inserção de nova tarefa | Digitar um texto e clicar em "Adicionar" | Nova tarefa aparece na lista |
@@ -37,7 +37,7 @@ Os testes foram criados com base nos seguintes casos de uso:
 
 ---
 
-### **CU02 – Concluir tarefa**
+CU02 – Concluir tarefa
 | ID | Caso de Teste | Passos | Resultado Esperado |
 |----|----------------|--------|--------------------|
 | CT04 | Marcar tarefa como concluída | Clicar em uma tarefa | Texto da tarefa riscado (classe `.completed`) |
@@ -46,7 +46,7 @@ Os testes foram criados com base nos seguintes casos de uso:
 
 ---
 
-### **CU03 – Editar tarefa**
+CU03 – Editar tarefa
 | ID | Caso de Teste | Passos | Resultado Esperado |
 |----|----------------|--------|--------------------|
 | CT07 | Edição com novo texto | Clicar no botão ✏️ e digitar novo texto | Nome da tarefa é atualizado |
@@ -55,7 +55,7 @@ Os testes foram criados com base nos seguintes casos de uso:
 
 ---
 
-### **CU04 – Excluir tarefa**
+CU04 – Excluir tarefa
 | ID | Caso de Teste | Passos | Resultado Esperado |
 |----|----------------|--------|--------------------|
 | CT10 | Excluir tarefa existente | Clicar no botão ❌ da tarefa | Tarefa é removida da lista |
@@ -64,7 +64,7 @@ Os testes foram criados com base nos seguintes casos de uso:
 
 ---
 
-## Conclusão
+Conclusão
 Todos os testes foram executados manualmente, com base nos casos de uso definidos.  
 A aplicação apresentou comportamento esperado em todos os cenários, garantindo:
 - A persistência correta das tarefas no `LocalStorage`;
@@ -77,5 +77,5 @@ Para futuras iterações (TP5 e TP6), recomenda-se:
 
 ---
 
-**Local do arquivo:**  
+Local do arquivo:**  
 `/docs/plano_testes.md`
