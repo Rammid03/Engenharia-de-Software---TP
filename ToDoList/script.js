@@ -12,6 +12,7 @@ function renderTasks() {
   tasks.forEach((task, index) => {
     const li = document.createElement('li');
     li.textContent = task.text;
+
     if (task.done) li.classList.add('completed');
 
     li.addEventListener('click', () => toggleTask(index));
@@ -43,6 +44,7 @@ function renderTasks() {
 // Adicionar nova tarefa
 function addTask() {
   const text = taskInput.value.trim();
+
   if (text) {
     tasks.push({ text, done: false });
     taskInput.value = '';
@@ -61,6 +63,7 @@ function toggleTask(index) {
 // Editar tarefa existente
 function editTask(index) {
   const newText = prompt('Editar tarefa:', tasks[index].text);
+
   if (newText !== null && newText.trim() !== '') {
     tasks[index].text = newText.trim();
     saveTasks();
