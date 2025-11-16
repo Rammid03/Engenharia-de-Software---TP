@@ -29,38 +29,41 @@ Os testes foram criados com base nos seguintes casos de uso:
 Casos de Teste
 
 CU01 – Adicionar tarefa
-| ID | Caso de Teste | Passos | Resultado Esperado |
-|----|----------------|--------|--------------------|
-| CT01 | Inserção de nova tarefa | Digitar um texto e clicar em "Adicionar" | Nova tarefa aparece na lista |
-| CT02 | Inserção vazia | Clicar em "Adicionar" com o campo vazio | Nenhuma tarefa é criada |
-| CT03 | Persistência local | Adicionar tarefa e recarregar a página | A tarefa continua salva |
+| ID     | Teste                            | Resultado Esperado      | Resultado Obtido |
+| ------ | -------------------------------- | ----------------------- | ---------------- |
+| CT01.1 | Adicionar uma tarefa válida      | Tarefa aparece na lista | **OK**           |
+| CT01.2 | Tentar adicionar tarefa vazia    | Nada deve acontecer     | **OK**           |
+| CT01.3 | Verificar se salva ao recarregar | Tarefa permanece        | **OK**           |
+
 
 ---
 
 CU02 – Concluir tarefa
-| ID | Caso de Teste | Passos | Resultado Esperado |
-|----|----------------|--------|--------------------|
-| CT04 | Marcar tarefa como concluída | Clicar em uma tarefa | Texto da tarefa riscado (classe `.completed`) |
-| CT05 | Desmarcar tarefa | Clicar novamente na tarefa concluída | Texto volta ao estado normal |
-| CT06 | Atualização do contador | Marcar/desmarcar tarefas | Contador exibe número correto de pendentes |
+| ID     | Teste                | Resultado Esperado           | Resultado Obtido |
+| ------ | -------------------- | ---------------------------- | ---------------- |
+| CT02.1 | Clicar em uma tarefa | Texto fica tachado           | **OK**           |
+| CT02.2 | Clicar novamente     | Volta ao normal              | **OK**           |
+| CT02.3 | Contador atualiza    | Pendentes diminui ou aumenta | **OK**           |
+
 
 ---
 
 CU03 – Editar tarefa
-| ID | Caso de Teste | Passos | Resultado Esperado |
-|----|----------------|--------|--------------------|
-| CT07 | Edição com novo texto | Clicar no botão ✏️ e digitar novo texto | Nome da tarefa é atualizado |
-| CT08 | Cancelar edição | Clicar em ✏️ e cancelar o prompt | Nenhuma alteração é feita |
-| CT09 | Persistência após edição | Editar tarefa e recarregar a página | Tarefa mantém o novo texto salvo |
+| ID     | Teste                           | Resultado Esperado   | Resultado Obtido |
+| ------ | ------------------------------- | -------------------- | ---------------- |
+| CT03.1 | Editar texto da tarefa          | Texto é atualizado   | **OK**           |
+| CT03.2 | Cancelar edição (fechar prompt) | Nada muda            | **OK**           |
+| CT03.3 | Editar e salvar em localStorage | Persistência correta | **OK**           |
+
 
 ---
 
 CU04 – Excluir tarefa
-| ID | Caso de Teste | Passos | Resultado Esperado |
-|----|----------------|--------|--------------------|
-| CT10 | Excluir tarefa existente | Clicar no botão ❌ da tarefa | Tarefa é removida da lista |
-| CT11 | Persistência após exclusão | Excluir tarefa e recarregar a página | Tarefa excluída não reaparece |
-| CT12 | Atualização do contador | Excluir tarefa | Contador reflete novo total de tarefas |
+| ID     | Teste             | Resultado Esperado      | Resultado Obtido |
+| ------ | ----------------- | ----------------------- | ---------------- |
+| CT04.1 | Excluir tarefa    | Remove da lista         | **OK**           |
+| CT04.2 | Contador atualiza | Total diminui           | **OK**           |
+| CT04.3 | Persistência      | Não aparece após reload | **OK**           |
 
 ---
 
