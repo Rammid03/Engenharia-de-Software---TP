@@ -73,11 +73,6 @@ A aplicação apresentou comportamento esperado em todos os cenários, garantind
 - A persistência correta das tarefas no `LocalStorage`;
 - A interação intuitiva com o usuário;
 - A atualização correta do contador de tarefas.
-
-Para futuras iterações (TP5 e TP6), recomenda-se:
-- Implementar testes automatizados com **Jest** (JavaScript);
-- Criar relatório automático de testes.
-
 ---
 
 Local do arquivo:**  
