@@ -31,9 +31,9 @@ Casos de Teste
 CU01 – Adicionar tarefa
 | ID     | Teste                            | Resultado Esperado      | Resultado Obtido |
 | ------ | -------------------------------- | ----------------------- | ---------------- |
-| CT01.1 | Adicionar uma tarefa válida      | Tarefa aparece na lista | **OK**           |
-| CT01.2 | Tentar adicionar tarefa vazia    | Nada deve acontecer     | **OK**           |
-| CT01.3 | Verificar se salva ao recarregar | Tarefa permanece        | **OK**           |
+| CT01.1 | Adicionar uma tarefa válida      | Tarefa aparece na lista | OK               |
+| CT01.2 | Tentar adicionar tarefa vazia    | Nada deve acontecer     | OK               |
+| CT01.3 | Verificar se salva ao recarregar | Tarefa permanece        | OK               |
 
 
 ---
@@ -41,9 +41,9 @@ CU01 – Adicionar tarefa
 CU02 – Concluir tarefa
 | ID     | Teste                | Resultado Esperado           | Resultado Obtido |
 | ------ | -------------------- | ---------------------------- | ---------------- |
-| CT02.1 | Clicar em uma tarefa | Texto fica tachado           | **OK**           |
-| CT02.2 | Clicar novamente     | Volta ao normal              | **OK**           |
-| CT02.3 | Contador atualiza    | Pendentes diminui ou aumenta | **OK**           |
+| CT02.1 | Clicar em uma tarefa | Texto fica tachado           | OK               |
+| CT02.2 | Clicar novamente     | Volta ao normal              | OK               |
+| CT02.3 | Contador atualiza    | Pendentes diminui ou aumenta | OK               |
 
 
 ---
@@ -51,9 +51,9 @@ CU02 – Concluir tarefa
 CU03 – Editar tarefa
 | ID     | Teste                           | Resultado Esperado   | Resultado Obtido |
 | ------ | ------------------------------- | -------------------- | ---------------- |
-| CT03.1 | Editar texto da tarefa          | Texto é atualizado   | **OK**           |
-| CT03.2 | Cancelar edição (fechar prompt) | Nada muda            | **OK**           |
-| CT03.3 | Editar e salvar em localStorage | Persistência correta | **OK**           |
+| CT03.1 | Editar texto da tarefa          | Texto é atualizado   | OK               |
+| CT03.2 | Cancelar edição (fechar prompt) | Nada muda            | OK               |
+| CT03.3 | Editar e salvar em localStorage | Persistência correta | OK               |
 
 
 ---
@@ -61,9 +61,9 @@ CU03 – Editar tarefa
 CU04 – Excluir tarefa
 | ID     | Teste             | Resultado Esperado      | Resultado Obtido |
 | ------ | ----------------- | ----------------------- | ---------------- |
-| CT04.1 | Excluir tarefa    | Remove da lista         | **OK**           |
-| CT04.2 | Contador atualiza | Total diminui           | **OK**           |
-| CT04.3 | Persistência      | Não aparece após reload | **OK**           |
+| CT04.1 | Excluir tarefa    | Remove da lista         | OK               |
+| CT04.2 | Contador atualiza | Total diminui           | OK               |
+| CT04.3 | Persistência      | Não aparece após reload | OK               |
 
 ---
 
